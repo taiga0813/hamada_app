@@ -36,6 +36,8 @@ class DeviseCreateCompanies < ActiveRecord::Migration[6.0]
       t.text :profile
       t.string :profile_image_id
       t.timestamps null: false
+      t.string :username
+      t.string :phone
     end
 
     add_index :companies, :email,                unique: true
